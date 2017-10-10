@@ -15,7 +15,10 @@
           <div class="form-group">
             <label class="control-label col-xs-2">Formula</label>
             <div class="col-xs-10">
-              <input type="text" id="formula" class="form-control" />
+			   <form action="value_get.php" method="get">
+				 <input name= "elements" type="text" id="formula" class="form-control"/><br>
+			    <input type="submit">
+			  </form>
             </div>
           </div>
       </div>
@@ -241,7 +244,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="scripts.js"></script>
+        <script src="./scripts.js"></script>
 
 
 </body></html>
