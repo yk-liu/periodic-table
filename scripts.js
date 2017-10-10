@@ -34,13 +34,14 @@ $(document).ready(function(){
         }
     });
 
-    // Add LaTex data to textbox
+    // Add Symbol to textbox
     $('.element:not(.Lanthanoids):not(.Actinoids)').click(function(){
         var that = $(this);
         var current = $('#formula').val();
-        $('#formula').val(current + that.data('name') + ' ' + that.data('symbol'))
-        console.log(that.data('name') + ' ' + that.data('symbol'));
+        $('#formula').val(current + that.data('symbol')+' ')
+        console.log(that.data('symbol'));
     });
+
 
 
 
